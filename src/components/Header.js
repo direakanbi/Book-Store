@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Header = () => {
-  return <div>
+const Header = () => (
+  <div>
     <h1>BookStore CMS</h1>
-  </div>;
-};
+  </div>
+);
 
 export default Header;
