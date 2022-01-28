@@ -1,16 +1,28 @@
-import React from 'react';
-// eslint-disable-next-line import/no-cycle
-import AddBooks from '../../components/addBooks';
+const ADD_BOOK = 'ADD_BOOK';
+const REMOVE_BOOK = 'REMOVE_BOOK';
+const initialState = [];
 
-export const clickHandler = () => {
-  alert('Remove Book');
+export const addBook = (payload) => ({
+  type: ADD_BOOK,
+  payload,
+});
+
+export const removeBook = (payload) => ({
+  type: REMOVE_BOOK,
+  payload,
+});
+
+// post action creator
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case ADD_BOOK:
+      return [...state, action.payload];
+    case REMOVE_BOOK:
+      return state.filter((book) => book.id !== action.payload.id);
+    default:
+      return state;
+  }
 };
 
-const Book = () => (
-  <div className="books">
-    <h1 className="header">List of Books</h1>
-    <AddBooks />
-  </div>
-);
-
-export default Book;
+export default reducer;
