@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import id from "./C16A2340-7BE6-4ACE-88D5-E6DF9E85165C.png";
 const Nav = () => (
