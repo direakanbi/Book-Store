@@ -89,20 +89,20 @@ a:hover {
 }
 
 .action {
-  font-family: 'Arial';
+  font-family: sans-serif;
   font-weight: bolder;
   color: rgb(131, 130, 130);
-  margin: 15px 0px 0px 0px;
+  margin: 15px 0 0 0;
   padding: 0;
 }
 
 .action-name {
   color: #0290ff;
-  margin: 0px 0px 0px 0px;
+  margin: 0 0 0 0;
 }
 
 h2 {
-  margin: 10px 0px 0px 0px;
+  margin: 10px 0 0 0;
   padding: 0;
   font-size: 20px;
 }
@@ -129,13 +129,12 @@ h2 {
   height: 5rem;
   margin-top: 3rem;
   color: #d3d3d3;
-  
 }
 
 .cur-head-sec {
   font-size: 15px;
   font-weight: lighter;
-  margin: 8px 6px 23px 0px;
+  margin: 8px 6px 23px 0;
 }
 
 img {
