@@ -11,7 +11,7 @@ const Book = (props) => {
         <article>
           <p className="action">{book.category}</p>
           <h2>{book.title}</h2>
-          <p className="action">Suzanne Collins</p>
+          <p className="action-name">Suzanne Collins</p>
           <ul className="comment-links">
             <li>Comments</li>
             <li>
@@ -28,9 +28,10 @@ const Book = (props) => {
           <p className="percent complete">Completed</p>
         </div>
       </div>
+      <div className="line">|</div>
       <div className="current">
         <h3 className="cur-head">CURRENT CHAPTER</h3>
-        <h3 className="cur-head sec">Chapter 17</h3>
+        <h3 className="cur-head-sec">Chapter 17</h3>
         <input className="progress" type="button" value="UPDATE PROGRESS" />
       </div>
     </div>
